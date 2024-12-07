@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        th, td{
+            border: 1px solid black;
+        }
+        tfoot{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Whey 1kg</td>
+                <td>40 </td>
+                <td>R$:120.00</td>
+                <td rowspan="2">Sim</td>
+            </tr>
+
+            <tr>
+                <td>Creatina 1kg</td>
+                <td>25</td>
+                <td>R$:190.00</td>
+                <!-- foi daqui que tiramos o <td> -->
+            </tr>
+
+            <tr>
+                <td>Albumina 1kg</td>
+                <td>56</td>
+                <td>R$:80.00</td>
+                <td>Não</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>QTDE Total: 121</td>
+                <td colspan="2">R$:390.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
